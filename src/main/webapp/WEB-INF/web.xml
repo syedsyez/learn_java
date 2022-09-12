@@ -24,9 +24,49 @@
     <display-name>RegisterStudent</display-name>
     <servlet-name>RegisterStudent</servlet-name>
     <servlet-class>com.java.besant.javatr.RegisterStudent</servlet-class>
+    <init-param>
+      <param-name>dbuser</param-name>
+      <param-value>dbpassword</param-value>
+    </init-param>
   </servlet>
   <servlet-mapping>
     <servlet-name>RegisterStudent</servlet-name>
     <url-pattern>/RegisterStudent</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>RetriveStudentDetails</display-name>
+    <servlet-name>RetriveStudentDetails</servlet-name>
+    <servlet-class>com.java.besant.javatr.RetriveStudentDetails</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RetriveStudentDetails</servlet-name>
+    <url-pattern>/RetriveStudentDetails</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>myfirstJsp</servlet-name>
+    <jsp-file>/firstJspPage.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>myfirstJsp</servlet-name>
+    <url-pattern>/firstJspPage</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>RetriveStudentServlet</display-name>
+    <servlet-name>RetriveStudentServlet</servlet-name>
+    <servlet-class>com.java.besant.javatr.RetriveStudentServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RetriveStudentServlet</servlet-name>
+    <url-pattern>/RetriveStudentServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  <servlet-name>viewStudents</servlet-name>
+  <jsp-file>/viewStudentDetails.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>viewStudents</servlet-name>
+  <url-pattern>/viewStudentDetails</url-pattern>
   </servlet-mapping>
 </web-app>
